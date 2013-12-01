@@ -1,0 +1,6 @@
+/*Iniciando CSS propio de Crank*/
+#ofertas {
+	height: 400px;
+	width: 100%;
+	border: 2px solid white;
+}
