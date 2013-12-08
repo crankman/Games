@@ -12,7 +12,8 @@
 						<div class="widget">
 							<div class="widget-content">
 								<div class="video-play">
-									<a href="#"><%= image_tag("video.jpg") %></a>
+									<iframe width="680" height="380" src="//www.youtube.com/embed/h577puRphXQ" frameborder="0" allowfullscreen>
+									</iframe>
 								</div>
 							</div>
 						</div>
@@ -80,12 +81,15 @@
 
 						<div class="widget">
 							<div class="widget-content-pd">
-								<p class="ct-img"><a href="#"><%= image_tag ("img-blog4.jpg") %></a></p>
-								
-								<p class="ct-img"><a href="#"><%= image_tag ("img-blog2.jpg") %></a></p>
-								
-								<p class="ct-img"><a href="#"><%= image_tag ("img-blog3.jpg") %></a></p>
-																
+
+								<% 5.times do |index| %>
+								<p class="ct-img">
+									<%= link_to asset_path("img-blog#{index+1}.jpg"), rel: "lightbox-galery", title: "" do %>  
+										<%= image_tag("img-blog#{index+1}.jpg") %>
+									<% end %>
+								</p>
+								<% end %>
+
 								<div class="box-message">
 									<h3 class="title">Recomenda éste juego: (11 Comments)</h3>
 									<ul class="box-message-content">

@@ -1,6 +1,26 @@
 /*Iniciando CSS propio de Crank*/
 #ofertas {
-	height: 400px;
+	height: 420px;
 	width: 100%;
-	border: 2px solid white;
+	border: 1px solid #45484c;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.item img {
+	width: 100%;
+}
+
+.carousel-indicators {
+	margin: 0px;
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	background: #333333;
+	background: rgba(0, 0, 0, 0.75);
 }

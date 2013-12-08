@@ -15,6 +15,16 @@
 			$(this).find('.overlay').next().css({'opacity': 1});
 		});
 
+		$('#logokhan').hover(
+		        function() {
+		            $(this).addClass('animated tada');
+
+		        },
+		        function() {
+		            $(this).removeClass('animated tada');
+
+		        });
+
 	});
 
 
