@@ -24,3 +24,13 @@
 	background: #333333;
 	background: rgba(0, 0, 0, 0.75);
 }
+
+.sinopsis p {
+	font-style:italic ;
+	font-weight: bold;
+}
+
+.caracteristicas p {
+	text-align: center;
+	font-weight: bold;
+}
