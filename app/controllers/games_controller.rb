@@ -7,5 +7,6 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @similar_games = Game.all
   end
 end

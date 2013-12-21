@@ -51,9 +51,9 @@
                 <div class="caracteristicas">
                   <p>Título Original: <%= @game.title %></p>
 
-                  <p>Género: Acción, Plataformas, Aventura</p>
+                  <p>Género: <%#= @game.genres.join(", ") %></p>
 
-                  <p>Idiomas: Inglés, Español (entre otros)</p>
+                  <p>Idiomas: <%#= @game.languajes.join(", ") %></p>
 
                   <p>Tamaño: <%= @game.size %>Gb (Medicina Incluida)</p>
 
@@ -74,7 +74,6 @@
 
             <div class="widget">
               <div class="widget-content-pd">
-
                 <% 5.times do |index| %>
                 <p class="ct-img">
                   <%= link_to asset_path("img-blog#{index+1}.jpg"), rel: "lightbox-galery", title: "" do %>  
@@ -177,14 +176,14 @@
               </div>
             </div>
             <ul class="thumbnails thumbnails-horizontal">
-              <% 6.times do %>
+              <% @similar_games.each do |game| %>
               <li class="span3">
                 <div class="thumbnail border-radius-top">
                   <div class="bg-thumbnail-img">
                     <%= image_tag("pj7.jpg", class:"border-radius-top") %>
                   </div>
 
-                  <h5><a href="#">Nombre del Juego</a></h5>
+                  <h5><a href="#"><%= game.title %></a></h5>
                 </div>
                 <div class="box border-radius-bottom">
                   <p>
