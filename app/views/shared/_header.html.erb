@@ -11,23 +11,23 @@
 				<ul class="nav pull-right">
 					<li class="divider-vertical"></li>
 
-              		<li><a href="#">Inicio</a></li>
+              		<li><%= link_to "Inicio", root_path %></li>
 
               		<li class="divider-vertical"></li>
 
-              		<li><a href="#">Recomendados</a></li>
+              		<li><%= link_to "Recomendados", root_path(:anchor => "recomendados")  %></li>
 
               		<li class="divider-vertical"></li>
 
-              		<li><a href="#">Más Vistiados</a></li>
+              		<li><%= link_to "Más Vistiados", root_path(:anchor => "+visitados") %></li>
 
-              		<li class="divider-vertical"></li>
+              		<li class="divider-vertical"></li>              		
 
               		<li><a href="#">Categorías</a></li>
 
               		<li class="divider-vertical"></li>
 
-              		<li><a href="#">Contacto</a></li>
+              		<li><%= link_to "Contacto", :controller => "site", :action => "contacto" %></li>
 
               		<li class="divider-vertical"></li>
             	</ul>

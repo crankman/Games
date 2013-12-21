@@ -12,7 +12,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'jquery-rails'
 
-gem 'turbolinks'
+gem 'jquery-turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 
