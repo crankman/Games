@@ -10,7 +10,7 @@ ActiveAdmin.setup do |config|
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
-  # config.site_title_link = "/"
+  config.site_title_link = "/"
 
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
@@ -118,7 +118,7 @@ ActiveAdmin.setup do |config|
   # This allows your users to comment on any resource registered with Active Admin.
   #
   # You can completely disable comments:
-  # config.allow_comments = false
+  config.allow_comments = false
   #
   # You can disable the menu item for the comments index page:
   # config.show_comments_in_menu = false
@@ -201,10 +201,10 @@ ActiveAdmin.setup do |config|
   #
   # To disable/customize for the :admin namespace:
   #
-  #   config.namespace :admin do |admin|
+    config.namespace :admin do |admin|
   #
   #     # Disable the links entirely
-  #     admin.download_links = false
+      admin.download_links = false
   #
   #     # Only show XML & PDF options
   #     admin.download_links = [:xml, :pdf]
@@ -213,7 +213,7 @@ ActiveAdmin.setup do |config|
   #     #   (for example, with cancan)
   #     admin.download_links = proc { can?(:view_download_links) }
   #
-  #   end
+    end
 
 
   # == Pagination
