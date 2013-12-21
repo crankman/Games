@@ -99,7 +99,8 @@ GEM
     jquery-turbolinks (2.0.1)
       railties (>= 3.1.0)
       turbolinks
-
+    jquery-ui-rails (4.1.1)
+      railties (>= 3.1.0)
     json (1.8.1)
     kaminari (0.15.0)
       actionpack (>= 3.0.0)
@@ -187,7 +188,8 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
-  rails (= 4.0.0)
+  pg
+  rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
