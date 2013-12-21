@@ -1,95 +1,95 @@
 <div class="main">
-	<div class="container">
+  <div class="container">
 
-		<%= render "shared/buscador" %>
+    <%= render "shared/buscador" %>
 
-		<%= render "shared/slider" %>			
+    <%= render "shared/slider" %>
 
-		<div class="row">
-			<!-- **************** start Recomendados ****************** -->
-			<div class="box-wrapper span12">
-				<div class="row">
-					<div class="title span12">
-						<h3 class="pull-left">Juegos Recomendados</h3>
-					</div>
-				</div>
+    <div class="row">
+      <!-- **************** start Recomendados ****************** -->
+      <div class="box-wrapper span12">
+        <div class="row">
+          <div class="title span12">
+            <h3 class="pull-left">Juegos Recomendados</h3>
+          </div>
+        </div>
 
-				<ul class="thumbnails thumbnails-vertical">
-					<% 8.times do %>
-					<li class="span6">
-						<div class="thumbnail border-radius-top">
-							<div class="bg-thumbnail-img">
-								<%= image_tag("pj7.jpg", class:'border-radius-top', style:"opacity: 1;") %>
-							</div>
-							<div class="thumbnail-content-left">
-								<h5><a href="#">Nombre del Juego</a></h5>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua.
-								</p>
-							</div>
-						</div>
-						<div class="box border-radius-bottom">
-							<p>
-								<span class="title_torrent pull-left"><i class="fa fa-thumbs-up"></i>Like</span>
-								<span class="number-view pull-right"><i class="fa fa-eye"></i>1,444,898</span>
-							</p>
-						</div>
-					</li>
-					<% end %>					
-				</ul>
-			</div>
-			<!-- **************** end Recomendados ****************** -->
+        <ul class="thumbnails thumbnails-vertical">
+          <% @recomended do |game| %>
+          <li class="span6">
+            <div class="thumbnail border-radius-top">
+              <div class="bg-thumbnail-img">
+                <%= image_tag("pj7.jpg", class:'border-radius-top', style:"opacity: 1;") %>
+              </div>
+              <div class="thumbnail-content-left">
+                <h5><a href="#"><%= game.title %></a></h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="box border-radius-bottom">
+              <p>
+                <span class="title_torrent pull-left"><i class="fa fa-thumbs-up"></i>Like</span>
+                <span class="number-view pull-right"><i class="fa fa-eye"></i>1,444,898</span>
+              </p>
+            </div>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+      <!-- **************** end Recomendados ****************** -->
 
-			<!-- **************** start Más Visitados ****************** -->
-			<div class="box-wrapper  span12">				
-				<div class="row">
-					<div class="title span12">
-						<h3 class="pull-left">Juegos Más Visitados</h3>
-					</div>
-				</div>
+      <!-- **************** start Más Visitados ****************** -->
+      <div class="box-wrapper  span12">
+        <div class="row">
+          <div class="title span12">
+            <h3 class="pull-left">Juegos Más Visitados</h3>
+          </div>
+        </div>
 
-				<ul class="thumbnails thumbnails-horizontal">
-					<% 16.times do %>
-					<li class="span3">
-						<div class="thumbnail border-radius-top">
-							<div class="bg-thumbnail-img">
-								<%= image_tag("pj5.jpg", class:"border-radius-top", style:"opacity: 1;") %>
-							</div>
-							<h5><a href="#">Nombre del Juego </a></h5>
-						</div>
-						<div class="box border-radius-bottom">
-							<p>
-								<span class="title_torrent pull-left pull-left">
-									<i class="fa fa-thumbs-up"></i>
+        <ul class="thumbnails thumbnails-horizontal">
+          <% @most_visited do |game| %>
+          <li class="span3">
+            <div class="thumbnail border-radius-top">
+              <div class="bg-thumbnail-img">
+                <%= image_tag("pj5.jpg", class:"border-radius-top", style:"opacity: 1;") %>
+              </div>
+              <h5><a href="#"><%= game.title %> </a></h5>
+            </div>
+            <div class="box border-radius-bottom">
+              <p>
+                <span class="title_torrent pull-left pull-left">
+                  <i class="fa fa-thumbs-up"></i>
 
-									Like
-								</span>
+                  Like
+                </span>
 
-								<span class="number-view pull-right">
-									<i class="fa fa-eye"></i>
+                <span class="number-view pull-right">
+                  <i class="fa fa-eye"></i>
 
-									1,444,898
-								</span>
-							</p>
-						</div>
-					</li>					
-					<% end %>
-				</ul>
+                  1,444,898
+                </span>
+              </p>
+            </div>
+          </li>
+          <% end %>
+        </ul>
 
-				<div class="row">
-					<div class="span12">
-						<div class="navigation pagination pull-right">
-							<ul>
-								<li><a href="#">←</a></li>
-								<li><a class="active" href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">→</a></li>
-							</ul>
-						</div>
-					</div><!-- end navigation -->
-				</div>
-			</div><!-- **************** end Más Visitados ****************** -->			
-		</div><!-- row -->				
-	</div><!-- end container -->
+        <div class="row">
+          <div class="span12">
+            <div class="navigation pagination pull-right">
+              <ul>
+                <li><a href="#">←</a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">→</a></li>
+              </ul>
+            </div>
+          </div><!-- end navigation -->
+        </div>
+      </div><!-- **************** end Más Visitados ****************** -->
+    </div><!-- row -->
+  </div><!-- end container -->
 </div><!-- end main -->
