@@ -9,6 +9,6 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     @similar_games = Game.all
     visits = @game.visit.to_i + 1
-    @game.update(visit: visit)
+    @game.update(visit: visits)
   end
 end
