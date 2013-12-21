@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
   def index
     @banners = Banner.all.limit(3)
-    @recomended = Game.all.limit(8)
+    @recomended = Game.where(recommended: true).limit(8)
     @most_visited = Game.all.order("visit")
   end
 
