@@ -19,7 +19,7 @@
           <li class="span6">
             <div class="thumbnail border-radius-top">
               <div class="bg-thumbnail-img">
-                <%= image_tag("pj7.jpg", class:'border-radius-top', style:"opacity: 1;") %>
+                <%= image_tag(game.portada.url, class:'border-radius-top', style:"opacity: 1;") %>
               </div>
               <div class="thumbnail-content-left">
                 <h5><%= link_to game.title, game %></h5>
@@ -53,9 +53,9 @@
           <li class="span3">
             <div class="thumbnail border-radius-top">
               <div class="bg-thumbnail-img">
-                <%= image_tag("pj5.jpg", class:"border-radius-top", style:"opacity: 1;") %>
+                <%= image_tag(game.portada.url, class:"border-radius-top", style:"opacity: 1;") %>
               </div>
-              <h5><a href="#"><%= game.title %> </a></h5>
+              <h5><%= link_to game.title, game %></h5>
             </div>
             <div class="box border-radius-bottom">
               <p>

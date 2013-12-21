@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'font-awesome-rails', '~> 4.0.3'
+gem 'carrierwave'
 
 group :doc do
   gem 'sdoc', require: false

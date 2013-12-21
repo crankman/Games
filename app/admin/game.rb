@@ -1,8 +1,8 @@
 ActiveAdmin.register Game do
 
-  permit_params :title, :size, :dvd, :description, :video_url, :genre_ids, :languaje_ids
+  permit_params :title, :size, :dvd, :description, :video_url, :portada, :captura
 
-  form do |f|
+  form(html: { multipart: true }) do |f|
     f.inputs "Ficha tecnica" do
       f.input :title
       f.input :description
@@ -13,6 +13,8 @@ ActiveAdmin.register Game do
     end
     f.inputs "Adjuntos" do
       f.input :video_url
+      f.input :portada, as: :file
+      f.input :captura, as: :file
     end
 
     f.actions
