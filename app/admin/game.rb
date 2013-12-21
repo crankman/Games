@@ -17,6 +17,8 @@ ActiveAdmin.register Game do
       f.input :captura, as: :file
     end
 
+    f.input :recommended
+
     f.actions
   end
 end

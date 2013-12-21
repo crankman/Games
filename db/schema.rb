@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131221185841) do
+ActiveRecord::Schema.define(version: 20131221192756) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -53,19 +53,8 @@ ActiveRecord::Schema.define(version: 20131221185841) do
     t.datetime "updated_at"
   end
 
-  create_table "games", force: true do |t|
-    t.string   "title"
-    t.integer  "genre_id"
-    t.integer  "languaje_id"
-    t.integer  "size"
-    t.integer  "dvd"
-    t.text     "description"
-    t.string   "video_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "portada"
-    t.string   "captura"
-  end
+# Could not dump table "games" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "genres", force: true do |t|
     t.string   "name"
