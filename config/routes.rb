@@ -3,5 +3,5 @@ Games::Application.routes.draw do
   ActiveAdmin.routes(self)
   root 'games#index'
   resources :games
-  get 'contacto'    => 'site#contacto'
+  get 'contacto'    => 'games#contacto'
 end
