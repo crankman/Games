@@ -4,4 +4,8 @@ class SiteController < ApplicationController
     @recomended = Game.all.limit(8)
     @most_visited = Game.all
   end
+
+  def juego
+    @game = Game.find(params[:id])
+  end
 end
