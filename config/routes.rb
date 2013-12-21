@@ -1,5 +1,7 @@
 Games::Application.routes.draw do
-  root 'site#index'
-  get 'juego'       => 'site#juego'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  root 'games#index'
+  resources :games
   get 'contacto'    => 'site#contacto'
 end

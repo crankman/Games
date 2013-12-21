@@ -1,0 +1,132 @@
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="box-wrapper span9">
+        <div class="row">
+          <div class="box-content-widget box-video-play span9">
+            <div class="row">
+              <div class="title bg-title span9">
+                <h3 class="pull-hover"><%= @game.title %></h3>
+              </div>
+            </div>
+            <div class="widget">
+              <div class="widget-content">
+                <div class="video-play">
+                  <iframe width="680" height="380" src="//<%= @game.video_url %>" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Video -->
+        </div>
+
+        <div class="row">
+          <!-- Comienzo de Sinopsis -->
+          <div class="box-content-widget span9">
+            <div class="row">
+              <div class="title bg-title span9">
+                <h3 class="pull-hover">Sinopsis:</h3>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget-content-pd">
+                <div class="sinopsis">
+                  <p><%= @game.description %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Sinopsis -->
+          <!-- Comienzo de Ficha Técnica -->
+          <div class="box-content-widget span9">
+            <div class="row">
+              <div class="title bg-title span9">
+                <h3 class="pull-hover">Ficha Técnica:</h3>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget-content-pd">
+                <div class="caracteristicas">
+                  <p>Título Original: <%= @game.title %></p>
+
+                  <p>Género: <%#= @game.genres.join(", ") %></p>
+
+                  <p>Idiomas: <%#= @game.languajes.join(", ") %></p>
+
+                  <p>Tamaño: <%= @game.size %>Gb (Medicina Incluida)</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Ficha Técnica -->
+                
+
+          <!-- Comienzo de Capturas -->
+          <div class="box-content-widget span9">
+            <div class="row">
+              <div class="title bg-title span9">
+                <h3 class="pull-hover">Capturas:</h3>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget-content-pd">
+                <% 5.times do |index| %>
+                <p class="ct-img">
+                  <%= link_to asset_path("img-blog#{index+1}.jpg"), rel: "lightbox-galery", title: "" do %>  
+                    <%= image_tag(@game.captura.url) %>
+                  <% end %>
+                </p>
+                <% end %>
+
+                <div class="box-message">
+                  <h3 class="title">Recomenda éste juego: (11 Comments)</h3>
+                  <div class="fb-comments" data-href="http://example.com/comments" data-numposts="5" data-colorscheme="dark"></div>
+                  </div>
+                </div><!-- box-message -->
+              </div>
+            </div><!-- widget -->
+          </div><!-- box-content-widget -->
+        </div><!-- row -->
+      
+      <div class="sidebar-content span3">
+        <div class="row">
+          <div class="box-wrapper span3">
+            <div class="row">
+              <div class="title bg-title span3">
+                <h3 class="pull-hover">Juegos Similares</h3>
+              </div>
+            </div>
+            <ul class="thumbnails thumbnails-horizontal">
+              <% @similar_games.each do |game| %>
+              <li class="span3">
+                <div class="thumbnail border-radius-top">
+                  <div class="bg-thumbnail-img">
+                    <%= image_tag(game.portada.url, class:"border-radius-top") %>
+                  </div>
+
+                  <h5><a href="#"><%= game.title %></a></h5>
+                </div>
+                <div class="box border-radius-bottom">
+                  <p>
+                    <span class="title_torrent pull-left">Visto</span>
+
+                    <span class="number-view pull-right">
+                      <i class="fa fa-eye"></i>
+
+                      1,444,898
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <% end %>
+            </ul>
+          </div><!-- end thumbnails-style1 -->
+        </div><!-- row -->
+      </div><!-- end sidebar-content -->
+    </div><!-- row -->
+  </div><!-- end container -->
+</div><!-- end main -->
