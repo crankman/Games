@@ -1,0 +1,215 @@
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="box-wrapper span9">
+				<div class="row">
+					<div class="box-content-widget box-video-play span9">
+						<div class="row">
+							<div class="title bg-title span9">
+								<h3 class="pull-hover">Tomb Raider Legend</h3>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="widget-content">
+								<div class="video-play">
+									<iframe width="680" height="380" src="//www.youtube.com/embed/h577puRphXQ" frameborder="0" allowfullscreen>
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</div><!-- End Video -->
+				</div>
+
+				<div class="row">
+					<!-- Comienzo de Sinopsis -->
+					<div class="box-content-widget span9">						
+						<div class="row">
+							<div class="title bg-title span9">
+								<h3 class="pull-hover">Sinopsis:</h3>
+							</div>
+						</div>
+
+						<div class="widget">
+							<div class="widget-content-pd">
+								<div class="sinopsis">
+									<p>
+										Una Lara inteligente y con recursos: Lara debe utilizar sus músculos e inteligencia para superar situaciones imposibles. El jugador debe guiar a Lara a través de puzles físicos, desafiantes entornos, en una historia de alto octanaje para superar una angustiosa situación y escapar con vida de la isla.
+										Combate: Tomb Raider lleva el género de la acción a un nuevo nivel con viscerales combates en tercera persona y un desarrollado sistema de mejora de armamento y equipamiento, que Lara tendrá que emplear estratégicamente para superar las crecientes dificultades ante los enemigos y los entornos del juego. Si te gustan las franquicias Uncharted o Batman Arkham, Tomb Raider sale ganando en la comparativa con estas experiencias de juego de calidad, con su toque único orientado hacia la Acción y Supervivencia.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Sinopsis -->
+					
+					<!-- Comienzo de Ficha Técnica -->
+					<div class="box-content-widget span9">						
+						<div class="row">
+							<div class="title bg-title span9">
+								<h3 class="pull-hover">Ficha Técnica:</h3>
+							</div>
+						</div>
+
+						<div class="widget">
+							<div class="widget-content-pd">
+								<div class="caracteristicas">
+									<p>Título Original: Tomb Raider Legend</p>
+
+									<p>Género: Acción, Plataformas, Aventura</p>
+
+									<p>Idiomas: Inglés, Español (entre otros)</p>
+
+									<p>Tamaño: 5.8Gb (Medicina Incluida)</p>
+
+									<p>Cantidad de DVD: 2</p>
+
+									<p>Precio c/DVD: $10<p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Ficha Técnica -->
+								
+
+					<!-- Comienzo de Capturas -->
+					<div class="box-content-widget span9">
+						<div class="row">
+							<div class="title bg-title span9">
+								<h3 class="pull-hover">Capturas:</h3>
+							</div>
+						</div>
+
+						<div class="widget">
+							<div class="widget-content-pd">
+
+								<% 5.times do |index| %>
+								<p class="ct-img">
+									<%= link_to asset_path("img-blog#{index+1}.jpg"), rel: "lightbox-galery", title: "" do %>  
+										<%= image_tag("img-blog#{index+1}.jpg") %>
+									<% end %>
+								</p>
+								<% end %>
+
+								<div class="box-message">
+									<h3 class="title">Recomenda éste juego: (11 Comments)</h3>
+									<ul class="box-message-content">
+										<li>
+											<a class="avatar-comment span1" href="#">
+												<%= image_tag ("cm-1.jpg") %>
+											</a>
+											<div class="message-wrapper span6">
+												<div class="text-message">
+													<a href="#">
+														Su Personaje
+													</a>
+													<span class="comment-data">
+														Apr 16th at 4:49pm
+													</span>
+													<span class="comment-text-wrap">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ....
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<a class="avatar-comment span1" href="#">
+												<%= image_tag ("cm-3.jpg") %>
+											</a>
+											<div class="message-wrapper span6">
+												<div class="text-message">
+													<a href="#">
+														Naruto Uzumaki
+													</a>
+													<span class="comment-data">
+														Apr 16th at 4:49pm
+													</span>
+													<span class="comment-text-wrap">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ....
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<a class="avatar-comment span1" href="#">
+												<%= image_tag ("cm-sasha.jpg") %>
+											</a>
+											<div class="message-wrapper span6">
+												<div class="text-message">
+													<a href="#">
+														Sasha Grey
+													</a>
+													<span class="comment-data">
+														Apr 16th at 4:49pm
+													</span>
+													<span class="comment-text-wrap">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ....
+													</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+
+									<div class="box-add-comment">
+										<div>
+											<div class="avatar-comment span1" href="#">
+												<%= image_tag ("cm-2.jpg") %>
+											</div>
+
+											<div class="message-wrapper span6">
+												<form class="form-comment">
+													<input placeholder="Comentá aquí..." type="text">
+												</form>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<button class="view-more border-rd4">Leer Más ↓</button>
+									</div>
+								</div><!-- box-message -->
+							</div>
+						</div><!-- widget -->
+					</div><!-- box-content-widget -->
+				</div><!-- row -->
+			</div><!-- end body-content -->
+			
+			<div class="sidebar-content span3">
+				<div class="row">
+					<div class="box-wrapper span3">
+						<div class="row">
+							<div class="title bg-title span3">
+								<h3 class="pull-hover">Juegos Similares</h3>
+							</div>
+						</div>
+						<ul class="thumbnails thumbnails-horizontal">
+							<% 6.times do %>
+							<li class="span3">
+								<div class="thumbnail border-radius-top">
+									<div class="bg-thumbnail-img">
+										<%= image_tag("pj7.jpg", class:"border-radius-top") %>
+									</div>									
+
+									<h5><a href="#">Nombre del Juego</a></h5>
+								</div>
+								<div class="box border-radius-bottom">
+									<p>
+										<span class="title_torrent pull-left">Visto</span>
+
+										<span class="number-view pull-right">
+											<i class="fa fa-eye"></i>
+
+											1,444,898
+										</span>
+									</p>
+								</div>
+							</li>
+							<% end %>
+						</ul>
+					</div><!-- end thumbnails-style1 -->
+				</div><!-- row -->
+			</div><!-- end sidebar-content -->
+		</div><!-- row -->
+	</div><!-- end container -->
+</div><!-- end main -->

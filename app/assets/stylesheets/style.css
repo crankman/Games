@@ -1,4 +1,8 @@
 /*Iniciando CSS propio de Crank*/
+html, body {
+	height: 100%;
+}
+
 #ofertas {
 	height: 420px;
 	width: 100%;
@@ -33,4 +37,12 @@
 .caracteristicas p {
 	text-align: center;
 	font-weight: bold;
+}
+
+.titulo {
+	font-size: 40px;
+}
+
+.phone {
+	font-size: 23px;
 }
