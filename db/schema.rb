@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131221192756) do
+ActiveRecord::Schema.define(version: 20131221201507) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20131221192756) do
     t.text     "caption"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo"
   end
 
 # Could not dump table "games" because of following NoMethodError

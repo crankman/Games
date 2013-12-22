@@ -12,7 +12,7 @@
         <div class="carousel-inner">
           <% @banners.each do |banner| %>
           <div class="active item">
-            <%= image_tag("img-blog1.jpg") %>
+            <%= image_tag(banner.photo.url) %>
 
             <div class="carousel-caption">
               <h4><%= banner.title %></h4>
