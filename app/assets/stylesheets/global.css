@@ -509,7 +509,7 @@ border-bottom-color: #999;
 	background:none;
 	color:#08C;
 }
-.footer .nav-list > li > a > i.twitter,.footer .nav-list > li > a > i.facebook,.footer .nav-list > li > a > i.dd{
+.footer .nav-list > li > a > i.googleplus,.footer .nav-list > li > a > i.facebook,.footer .nav-list > li > a > i.dd{
 	background:url("icon-small.png") left top no-repeat;
 	height:16px;
 	width:16px;

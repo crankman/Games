@@ -74,9 +74,9 @@
 
             <div class="widget">
               <div class="widget-content-pd">
-                <% 5.times do |index| %>
+                <% 5.times do %>
                 <p class="ct-img">
-                  <%= link_to asset_path("img-blog#{index+1}.jpg"), rel: "lightbox-galery", title: "" do %>  
+                  <%= link_to asset_path(@game.captura.url), rel: "lightbox-galery", title: "" do %>  
                     <%= image_tag(@game.captura.url) %>
                   <% end %>
                 </p>
