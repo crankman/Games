@@ -46,3 +46,16 @@ html, body {
 .phone {
 	font-size: 23px;
 }
+
+.centro {
+	text-align: center;
+}
+
+.prueba {
+	border: 2px solid white;
+	display: none;
+}
+
+#u_0_3 {
+	display: none;
+}
