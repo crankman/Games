@@ -51,9 +51,9 @@
                 <div class="caracteristicas">
                   <p>Título Original: <%= @game.title %></p>
 
-                  <p>Género: <%#= @game.genres.join(", ") %></p>
+                  <p>Género: <%= get_list(@game.genres) %></p>
 
-                  <p>Idiomas: <%#= @game.languajes.join(", ") %></p>
+                  <p>Idiomas: <%= get_list(@game.languajes) %></p>
 
                   <p>Tamaño: <%= @game.size %>Gb (Medicina Incluida)</p>
 
@@ -83,7 +83,11 @@
                 <% end %>
 
                 <div class="box-message">
-                  <h3 class="title">Recomenda éste juego: (11 Comments)</h3>
+                  <h3 class="title">Recomenda éste juego:
+                    <!-- Button Like -->
+                      <div class="fb-like" data-href="<%= game_url(@game) %>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    <!-- End Button -->
+                  </h3>
                   <div class="fb-comments" data-href="http://example.com/comments" data-numposts="5" data-colorscheme="dark"></div>
                   </div>
                 </div><!-- box-message -->
@@ -117,7 +121,7 @@
                     <span class="number-view pull-right">
                       <i class="fa fa-eye"></i>
 
-                      1,444,898
+                      <%= game.visit %>
                     </span>
                   </p>
                 </div>

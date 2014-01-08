@@ -1,6 +1,6 @@
 Games::Application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  devise_for :users
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root 'games#index'
   resources :games
   get 'contacto'    => 'games#contacto'
